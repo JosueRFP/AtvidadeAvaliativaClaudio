@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Walk : MonoBehaviour
+public class Player : MonoBehaviour
 {
+    public int speed = 5 , jump = 4;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +17,5 @@ public class Walk : MonoBehaviour
     {
         
     }
+
 }
