@@ -7,7 +7,7 @@ public class Player : MonoBehaviour
     float speed = 5;
     public Rigidbody2D body;
     float horizontal;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
         body.velocity = new Vector2(horizontal * speed, body.velocity.y);
+        
     }
 
 }
